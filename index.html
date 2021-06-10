@@ -35,10 +35,6 @@
             padding: 8px;
         }
 
-        form label {
-            font-weight: bold;
-        }
-
         form div {
             margin: 16px 0px;
         }
@@ -85,7 +81,7 @@
 
         <form id="login-form">
             <div>
-                <label for="username">Username:</label>
+                <label for="username" class="text-muted">Username</label>
                 <input id="username" type="text" class="form-control">
                 <div id="user-valid" class="green" hidden>
                     <i class="fas fa-check"></i>
@@ -97,7 +93,7 @@
             </div>
 
             <div>
-                <label for="password">Password:</label>
+                <label for="password" class="text-muted">Password</label>
                 <input id="password" type="password" class="form-control">
                 <div id="pass-valid" class="green" hidden>
                     <i class="fas fa-check"></i>
