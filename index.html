@@ -70,6 +70,12 @@
         .red {
             color: red;
         }
+
+        #messages p {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
     </style>
 </head>
 
@@ -92,7 +98,7 @@
 
             <div>
                 <label for="password">Password:</label>
-                <input id="password" type="password">
+                <input id="password" type="password" class="form-control">
                 <div id="pass-valid" class="green" hidden>
                     <i class="fas fa-check"></i>
 
@@ -102,13 +108,21 @@
                 </div>
             </div>
 
-            <input type="submit" value="Login" id="submit">
+            <input type="submit" value="Login" id="submit" class="btn btn-primary">
         </form>
-        <p id="username-empty" class="red" hidden>Please enter username!</p>
-        <p id="username-valid" class="red" hidden>Please enter a valid username!</p>
-        <p id="password-empty" class="red" hidden>Please enter password!</p>
-        <p id="password-valid" class="red" hidden>Please enter a valid password!</p>
-        <p id="success-login" class="green" hidden>Successful login!</p>
+        <div id="messages">
+            <p id="username-empty" class="badge bg-danger text-wrap" style="width: fit-content;" hidden>Please enter
+                username!</p>
+            <p id="username-valid" class="badge bg-danger text-wrap" style="width: fit-content;" hidden>Please enter a
+                valid username!</p>
+            <p id="password-empty" class="badge bg-danger text-wrap" style="width: fit-content;" hidden>Please enter
+                password!</p>
+            <p id="password-valid" class="badge bg-danger text-wrap" style="width: fit-content;" hidden>Please enter a
+                valid password!</p>
+            <p id="success-login" class="badge bg-success text-wrap" style="width: fit-content;" hidden>Successful
+                login!</p>
+        </div>
+
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
