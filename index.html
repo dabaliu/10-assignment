@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="script.js"></script>
     <style>
         body {
@@ -45,14 +47,16 @@
             position: relative;
         }
 
-        #user-valid, #user-invalid {
+        #user-valid,
+        #user-invalid {
             position: absolute;
             margin-top: 0;
             top: 15%;
             right: 3%;
         }
 
-        #pass-valid, #pass-invalid {
+        #pass-valid,
+        #pass-invalid {
             position: absolute;
             margin-top: 0;
             top: 55%;
@@ -76,7 +80,7 @@
         <form id="login-form">
             <div>
                 <label for="username">Username:</label>
-                <input id="username" type="text">
+                <input id="username" type="text" class="form-control">
                 <div id="user-valid" class="green" hidden>
                     <i class="fas fa-check"></i>
 
@@ -107,7 +111,9 @@
         <p id="success-login" class="green" hidden>Successful login!</p>
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
