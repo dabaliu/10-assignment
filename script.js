@@ -4,12 +4,16 @@ $(document).ready(function() {
         var username = $("#username").val();
         var password = $("#password").val();
 
+        /* Login credentials */
+        const user = "new_user";
+        const pass = "123456789";
+
         /* Username validation */
         if (username == null || username == '') {
             $('input[type="text"]').addClass("is-invalid");
             $('#username-empty').removeAttr('hidden');
             $('#user-invalid').removeAttr('hidden');
-        } else if (username !== 'new_user') {
+        } else if (username !== user) {
             $('input[type="text"]').addClass("is-invalid");
             $('#username-valid').removeAttr('hidden');
             $('#user-invalid').removeAttr('hidden');
@@ -23,7 +27,7 @@ $(document).ready(function() {
             $('input[type="password"]').addClass("is-invalid");
             $('#password-empty').removeAttr('hidden');
             $('#pass-invalid').removeAttr('hidden');
-        } else if (password !== '123456789') {
+        } else if (password !== pass) {
             $('input[type="password"]').addClass("is-invalid");
             $('#password-valid').removeAttr('hidden');
             $('#pass-invalid').removeAttr('hidden');
@@ -33,7 +37,7 @@ $(document).ready(function() {
         }
 
         /* Successful login */
-        if (username == 'new_user' && password == '123456789') {
+        if (username == user && password == pass) {
             $('input[type="text"]').addClass("is-valid");
             $('input[type="password"]').addClass("is-valid");
             $('#success-login').removeAttr('hidden');
